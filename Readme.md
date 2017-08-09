@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Хоптяр](https://up.htmlacademy.ru/htmlcss/18/user/24624).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
