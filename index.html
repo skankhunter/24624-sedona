@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
@@ -10,7 +10,7 @@
     <body>
         <header class="main-header">
                 <nav class="header-navigation">
-                    <a class="header-navigation">
+                    <a class="logo">
                         <img src="img\logo.svg" alt="Лого Sedona" width="70" height="70">
                     </a>
                     <ul class="site-navigation">
@@ -21,22 +21,21 @@
                     </ul>
                 </nav>
         </header>
-    <main class="conteiner">
+    <main class="container">
         <section class="welcome">
-            <h1>Welcome</h1>
-            <p class="welcome-item1">to the gorgeous</p>
-            <h2>Sedona</h2>
-            <p class="welcome-item2">"Because the Grand Canyon sucks!"</p>
+            <div class="welcome">
+                <img src="'img\welcome.svg" alt="welcome" width="" height="">
+            </div>
         </section>
         <section class="features">
-            <h2 class="visually-hidden">Преимущества</h2>
+            <h2 class="visuallyhidden">Преимущества</h2>
             <p class="features-tip1">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="features-tip2">Рассмотрим 5 причин, по который Седона лучше,чем Гранд каньон!</p>
             <div class="features-part1">
                 <div class="features-city">
                 <h3>Настоящий городок</h3>
                 <span class="number">№1</span>
-                <p class="features-part1-paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="features-paragraph">Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 <img src="img\picture1.svg" alt="Городок" width="200" height="100">
                 </div>
                 <div class="main-features">
@@ -58,7 +57,7 @@
                 <div class="features-bridge">
                 <h3>Там есть мост дьявола</h3>
                 <span class="number">№2</span>
-                <p class="features-part2-paragraph">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+                <p class="features-paragraph">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                 <img src="img\picture2.svg" alt="Каньон" width="200" height="100">
                 </div>
                 <div class="main-features">
@@ -81,17 +80,15 @@
             </div>
         </section>
         <section class="appointment">
-            <h1>Заинтересовались?</h1>
+            <b>Заинтересовались?</b>
             <p class="appointment-paragraph">Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложение гостиниц в Седоне</p>
             <p class="appointment-info">Поиск гостиницы в Седоне</p>
             <form action="#" class="appointment-info" method="post">
                 <label for="date-in">Дата заезда:</label>
                 <input type="text" name="date-in" value="" placeholder="24 апреля 2017" id="date-in">
-                <br>
                 <label for="date-out">Дата выезда:</label>
                 <input type="text" name="date-out" value="" placeholder="4 июля 2017" id="date-out">
-                <br>
                 <label for="adults">Взрослые:</label>
                 <span class="minus">-</span>
                 <input class="adult" type="text" name="adults" id="adults" placeholder="2">
@@ -100,19 +97,18 @@
                 <span class="minus">-</span>
                 <input class="kid" type="text" name="kids" id="kids" placeholder="2">
                 <span class="plus">+</span>
-
+                <button class="button" type="submit">Найти</button>
             </form>
-            <button class="button" type="submit">Найти</button>
         </section>
     </main>
 
     <footer class="main-footer">
-        <p class="tag">#VISITSEDONA</p>
-        <ul class="footer-social">
-            <li class="social-button"><a href="#"> Twitter </a> </li>
-            <li class="social-button"><a href="#"> Facebook </a> </li>
-            <li class="social-button"><a href="#"> YouTube </a> </li>
-        </ul>
+        <a class="tag" href="#">#VISITSEDONA</a>
+        <section class="footer-social">
+            <a class="social-button" href="#"> Twitter </a>
+            <a class="social-button" href="#"> Facebook </a>
+            <a class="social-button" href="#"> YouTube </a>
+        </section>
         <p class="footer-copyright">Website by
             <a class="button" href="http://htmlacademy.ru">HtmlAcademy</a>
         </p>
