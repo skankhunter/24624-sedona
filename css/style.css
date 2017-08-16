@@ -1,0 +1,14 @@
+body {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    font-family: "PTSans", Arial;
+    text-transform: uppercase;
+}
+.site-navigation {
+    line-height: 1.86;
+    font-weight: bold;
+}
+.visuallyhidden {
+    display: none;
+}
