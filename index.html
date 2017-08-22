@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
     <head>
-        <meta  charset=UTF-8">
+        <meta  charset="UTF-8">
         <title>Sedona</title>
         <meta name="description" content="">
         <link rel="stylesheet" href="normalize.css">
@@ -18,14 +18,14 @@
                     <li><a href="info.html">Информация</a> </li>
                     <li><a href="content.html">Фото и видео</a> </li>
                     <li><a href="map.html">Карта штата</a> </li>
-                    <li><a href="hotels.html">Гостиницы</a> </li>
+                    <li><a href="inner.html">Гостиницы</a> </li>
                 </ul>
             </nav>
         </header>
         <main class="container">
             <section class="welcome">
-                <div class="welcome">
-                    <img src="img/intro.jpg" alt="welcome" width="1200" height="780">
+                <div class="welcome-intro">
+                    <img src="img/intro.jpg" alt="Welcome" width="1200" height="780">
                 </div>
             </section>
             <section class="features">
@@ -87,39 +87,48 @@
                 <b>Заинтересовались?</b>
                 <p class="appointment-paragraph">Укажите предполагаемые даты поездки,
                     и мы покажем вам лучшие предложение гостиниц в Седоне</p>
-                <a class="appointment-info"><h1>Поиск гостиницы в Седоне</h1></a>
+                <button type="button" class="appointment-info">Поиск гостиницы в Седоне</button>
                 <form action="#" class="appointment-info" method="post">
                     <label for="date-in">Дата заезда:</label>
                     <input type="text" name="date-in" value="" placeholder="24 апреля 2017" id="date-in">
-                    <input type="image" src="img/calendar.svg" alt="Календарь" width="21" height="22">
+                    <input type="date" src="img/calendar.svg" alt="Календарь" width="21" height="22">
                     <label for="date-out">Дата выезда:</label>
                     <input type="text" name="date-out" value="" placeholder="4 июля 2017" id="date-out">
-                    <input type="image" src="img/calendar.svg" alt="Календарь" width="21" height="22">
+                    <input type="date" src="img/calendar.svg" alt="Календарь" width="21" height="22">
                     <label for="adults">Взрослые:</label>
-                    <span class="minus">-</span>
+                    <button type="button" class="minus">-</button>
                     <input class="adult" type="text" name="adults" id="adults" placeholder="2">
-                    <span class="plus">+</span>
+                    <button  type="button" class="plus">+</button>
                     <label for="kids">Дети:</label>
-                    <span class="minus">-</span>
+                    <button type="button" class="minus">-</button>
                     <input class="kid" type="text" name="kids" id="kids" placeholder="2">
-                    <span class="plus">+</span>
+                    <button type="button" class="plus">+</button>
                     <button class="button" type="submit">Найти</button>
                 </form>
             </section>
         </main>
 
         <footer class="main-footer">
-            <a class="tag" href="file:///C:/Users/SKYNET/Desktop/HTML/sedona/index.html#">#VISITSEDONA</a>
+            <a class="tag" href="#">#VISITSEDONA</a>
             <section class="footer-social">
-                <a class="social-button" href="#"> <img src="img/twitter.svg" alt="twitter" width="50" height="50"> </a>
-                <a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="facebook" width="50" height="50"> </a>
-                <a class="social-button" href="#"> <img src="img/youtube.svg" alt="youtube" width="50" height="50"> </a>
+                <a class="social-button" href="#">
+                    <img src="img/twitter.svg" alt="twitter" width="50" height="50">
+                </a>
+                <a class="social-button" href="#">
+                    <img src="img/fb-icon.svg" alt="facebook" width="50" height="50">
+                </a>
+                <a class="social-button" href="#">
+                    <img src="img/youtube.svg" alt="youtube" width="50" height="50">
+                </a>
             </section>
             <p class="footer-copyright">Website by
-                <a class="button" href="http://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy" width="114" height="40"></a>
+                <a class="button" href="http://htmlacademy.ru/">
+                    <img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy" width="114" height="40">
+                </a>
             </p>
             <div class="map">
                 <img src="img/map.jpg" alt="map" width="1200" height="594">
+                <button class="modal-close" type="button">Закрыть</button>
             </div>
         </footer>
     </body>

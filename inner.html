@@ -11,7 +11,7 @@
     <body>
         <header class="main-header">
             <nav class="header-navigation">
-                <a class="logo">
+                <a class="logo" href="index.html">
                     <img src="img/logo.png" alt="Лого Sedona" width="138" height="70">
                 </a>
                 <ul class="site-navigation">
@@ -23,37 +23,37 @@
             </nav>
         </header>
         <main class="container">
-            <img src="img/filter background.jpg" alt="background" width="1200" height="562">
+            <img src="img/filter_background.jpg" alt="background" width="1200" height="562">
             <h1 class="visuallyhidden">Фильтр</h1>
             <section class="filters1">
                 <form action="#" method="get" class="filter">
                     <fieldset>
                         <legend>Инфраструктура:</legend>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="pool">
+                        <label class="filter-option" for="pool">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="pool" id="pool">
                             Бассейн
                         </label>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" name="parking">
+                        <label class="filter-option" for="parking">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
                             Парковка
                         </label>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" name="Wi-Fi">
+                        <label class="filter-option" for="Wi-Fi">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
                             Wi-Fi
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Тип жилья:</legend>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="hotel">
+                        <label class="filter-option" for="hotel">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="hotel" id="'hotel">
                             Гостиница
                         </label>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="motel">
+                        <label class="filter-option" id="motel">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="motel" id=""motel>
                             Мотель
                         </label>
-                        <label class="filter-option">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="aps">
+                        <label class="filter-option" for="aps">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="aps" id="aps">
                             Апартаменты
                         </label>
                     </fieldset>
@@ -147,15 +147,22 @@
         <footer class="main-footer">
             <a class="tag" href="#">#VISITSEDONA</a>
             <section class="footer-social">
-                <a class="social-button" href="#"> <img src="img/twitter.svg" alt="twitter" width="17" height="15"> </a>
-                <a class="social-button" href="#"> <img src="img/fb-icon.svg" alt="facebook" width="12" height="22"> </a>
-                <a class="social-button" href="#"> <img src="img/youtube.svg" alt="youtube" width="20" height="16"> </a>
+                <a class="social-button" href="#">
+                    <img src="img/twitter.svg" alt="twitter" width="17" height="15">
+                </a>
+                <a class="social-button" href="#">
+                    <img src="img/fb-icon.svg" alt="facebook" width="12" height="22">
+                </a>
+                <a class="social-button" href="#">
+                    <img src="img/youtube.svg" alt="youtube" width="20" height="16">
+                </a>
             </section>
             <p class="footer-copyright">Website by
                 <a class="button" href="http://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy" width="114" height="40"></a>
             </p>
             <div class="map">
                 <img src="img/map.jpg" alt="map" width="1200" height="594">
+                <button class="modal-close" type="button">Закрыть</button>
             </div>
         </footer>
     </body>

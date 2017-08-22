@@ -2,11 +2,11 @@ body {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    font-family: "PTSans", Arial;
+    font-family: "PTSans", "Arial", sans-serif;;
     text-transform: uppercase;
 }
 .site-navigation {
-    line-height: 1.86;
+    line-height: 26px;
     font-weight: bold;
 }
 .visuallyhidden {
