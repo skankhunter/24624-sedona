@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css\normalize.css">
         <link rel="stylesheet" href="css\style.css">
     </head>
-    <body>
+    <body >
         <header class="main-header">
             <nav class="header-navigation">
                 <a class="logo" href="index.html">
@@ -23,8 +23,10 @@
             </nav>
         </header>
         <main class="container">
-            <img src="img/filter_background.jpg" alt="background" width="1200" height="562">
-            <h1 class="visuallyhidden">Фильтр</h1>
+            <div class="hotels-intro">
+               <!--<img src="img/filter_background.jpg" alt="background" width="1200" height="562">-->
+            </div>
+            <h1 class="visually-hidden">Фильтр</h1>
             <section class="filters1">
                 <form action="#" method="get" class="filter">
                     <fieldset>
@@ -45,7 +47,7 @@
                     <fieldset>
                         <legend>Тип жилья:</legend>
                         <label class="filter-option" for="hotel">
-                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="hotel" id="'hotel">
+                            <input class="visuallyhidden filter-input filter-input-checkbox" type="checkbox" checked="" name="hotel" id="hotel">
                             Гостиница
                         </label>
                         <label class="filter-option" id="motel">
@@ -57,8 +59,8 @@
                             Апартаменты
                         </label>
                     </fieldset>
-                    <label for="price-per-day">Стоимость в сутки (Р):</label>
-                    <div class="price-per-day" id="price-per-day">
+                    <label for="price-per-day" class="price-per-day">Стоимость в сутки (Р):</label>
+                    <div class="price-form" id="price-per-day">
                         <label> от
                             <input type="text" placeholder="0">
                         </label>
@@ -73,15 +75,16 @@
             <section class="sort">
                 <b>Найдено:3</b>
                 <div class="sort-types">
+                    <p class="sorting">Сортировка:</p>
                     <a class="sort-price">По цене</a>
                     <a class="sort-type">По типу</a>
                     <a class="sort-rating">По рейтингу</a>
                 </div>
-                <a class="triangle-button"></a>
-                <a class="triangle-button"></a>
+                <a class="triangle-button triangle-button-up"></a>
+                <a class="triangle-button triangle-button-down"></a>
             </section>
             <section class="catalog">
-                <h2 class="visuallyhidden">Варианты отлей</h2>
+                <h2 class="visually-hidden">Варианты отлей</h2>
                 <div class="hotel">
                     <p class="hotel-item-image">
                         <a href="catalog-item.html">
@@ -161,7 +164,7 @@
                 <a class="button" href="http://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" alt="logo-htmlacademy" width="114" height="40"></a>
             </p>
             <div class="map">
-                <img src="img/map.jpg" alt="map" width="1200" height="594">
+                <!--<img src="img/map.jpg" alt="map" width="1200" height="594">-->
                 <button class="modal-close" type="button">Закрыть</button>
             </div>
         </footer>
