@@ -27,8 +27,8 @@ a {
 
 .logo {
     position: absolute;
-    margin-top: 27px;
-    margin-left: 50%;
+
+    margin-left: 51%;
     transform: translateX(-50%);
 }
 
@@ -66,18 +66,29 @@ a {
 }
 
 .features-tip1 {
+    display: block;
+    width: 440px;
+    height: 48px;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+    margin: 0 auto;
     color: #000000;
 
 }
 
 .features-tip2 {
+    display: block;
+    width: 489px;
+    height: 13px;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
+    margin-top: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 56px;
     color: #333333;
 
 }
@@ -88,13 +99,13 @@ a {
 }
 
 .features-city {
-    background-color: #81b3d2;
+    /*background-color: #81b3d2;*/
     width: 400px;
     height: 256px;
-    padding-top: 46px;
+    /*padding-top: 46px;
     padding-left: 60px;
     padding-right: 59px;
-    padding-bottom: 64px;
+    padding-bottom: 64px;*/
 }
 
 .features-city h3 {
@@ -155,13 +166,13 @@ a {
 }
 
 .features-bridge {
-    background-color: #81b3d2;
+    /*background-color: #81b3d2;*/
     width: 400px;
     height: 256px;
-    padding-top: 49px;
+    /*padding-top: 49px;
     padding-left: 49px;
     padding-right: 49px;
-    padding-bottom: 65px;
+    padding-bottom: 65px;*/
     color: #ffffff;
 }
 
@@ -191,9 +202,16 @@ a {
     color: #000000;
 }
  .appointment p {
+     display: block;
+     width: 436px;
+     height: 38px;
      line-height: 24px;
      font-size: 14px;
      color: #333333;
+     margin-top: 38px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 52px;
  }
  button {
      font: inherit;
@@ -212,8 +230,8 @@ button:active {
 .minus,
 .plus {
     color: #a9a9a9;
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     font: inherit;
     background-color: #f2f2f2;
     border: none;
@@ -295,15 +313,15 @@ button:active {
     height: 38px;
 }
 .appointment-info input:hover,
-.appointment-info input:focus {
+.appointment-info input:active {
     background-color: #ebebeb;
 }
 
-/*Не рабоатет*/
-.appointment-info input:active {
+
+.appointment-info input:focus {
     background-color: #ffffff;
 }
-/*Не получается убрать фон и рамку*/
+
 input[name="date-in"] {
     padding-right: 5px;
 }
@@ -319,7 +337,6 @@ input[type="image"] {
     width: 21px;
 }
 
-/*Размеры на 1пиксель сверху и снизу больше, чем надо, не поулчилось убрать паддинг*/
 input[name="kid"],
 input[name="adult"]{
     width: 38px;
@@ -372,9 +389,7 @@ input[name="adult"]{
     color: #000000;
 }
 /* Тут не получается */
-.logo-html {
-    color: blue;
-}
+
 .logo-html:hover {
     opacity: .5;
 }
@@ -459,6 +474,7 @@ input {
     border: none;
     outline: none;
     width: 50px;
+    background-color: transparent;
 }
 
 .filter-button {
@@ -515,22 +531,28 @@ input {
     color: #000000;
     border: none;
 }
-/*Не отображаются*/
+
+.triangle-button {
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
 .triangle-button-up {
     background-image: url("../img/icon-up-dir.svg");
-    background-color: #cacaca;
+   color: #cacaca;
 }
+
 .triangle-button-down {
     background-image: url("../img/icon-down-dir.svg");
-    background-color: #cacaca;
 }
 
 .triangle-button:hover,
 .triangle-button:focus {
-    background-color: #000000;
+   color: #000000;
 }
 .triangle-button:active {
-    background-color: #81b3d2;
+    color: #81b3d2;
 }
 
 .catalog h3 {
@@ -607,4 +629,216 @@ input {
 .reserve:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #503e33;
+}
+
+/*Для сеток*/
+.main-header {
+
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-navigation-wrapper {
+    width: 100%;
+    min-height: 56px;
+    background-color: #ffffff;
+}
+
+.logo {
+    /*display: inline-block;*/
+    width: 138px;
+    height: 70px;
+
+}
+
+.site-navigation {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1200px;
+    min-height: 56px;
+    list-style: none;
+}
+
+.header-navigation-wrapper .site-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features-city {
+    display: flex;
+    justify-content: center;
+
+}
+
+.features-city-wrapper1 {
+    width: 400px;
+    min-height: 256px;
+    background-color: #81b3d2;
+    padding-top: 46px;
+    padding-left: 60px;
+    padding-right: 59px;
+    padding-bottom: 64px;
+}
+
+.features-city-wrapper2 {
+    width: 800px;
+    min-height: 256px;
+}
+
+.main-features {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 87px;
+}
+
+.main-features .feature-item {
+    width: 400px;
+    min-height: 300px;
+}
+
+.features-bridge-wrapper1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.features-bridge {
+    background-color: #81b3d2;
+    width: 400px;
+    height: 256px;
+}
+
+.features-bridge-wrapper2 {
+    width: 800px;
+    height: 256px;
+}
+
+.main-features2 {
+    margin-top: 0;
+    margin-bottom: 57px;
+    padding-top: 50px;
+    padding-left: 69px;
+    padding-right: 69px;
+    padding-bottom: 64px;
+}
+
+.appointment-wrapper8 {
+    width: 568px;
+    height: 395px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    margin: 0 auto;
+}
+
+.appointment-wrapper6 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+.appointment-wrapper3 {
+    padding-top: 30px;
+}
+.appointment-wrapper7 {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 967px;
+    min-height: 120px;
+}
+
+.tag-wrapper {
+    margin: 0;
+    min-height: 16px;
+    margin-right: 256px;
+}
+
+.footer-social-wrapper {
+    display: flex;
+   padding-right: 6px;
+    min-height: 48px;
+}
+.footer-social-wrapper a {
+    display: block;
+}
+
+.footer-copyright-wrapper {
+    width: 195px;
+    height: 40px;
+    margin-left: auto;
+}
+
+.filters1-wrapper1 {
+    display: flex;
+    width: 1055px;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333333;      /*Уюрать потом*/
+}
+
+.filters1-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    width: 141px;
+    height: 157px;
+    margin-right: 115px;
+}
+
+.filters1-wrapper3 {
+    display: flex;
+    flex-direction: column;
+    width: 141px;
+    height: 157px;
+    margin: 0;
+}
+
+.filters1-wrapper4 {
+    display: flex;
+    flex-direction: column;
+    width: 319px;
+    height: 155px;
+    margin-left: auto;
+}
+
+.sort-wrappper1 {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.sort-types {
+    display: flex;
+    justify-content: space-between;
+    width: 355px;
+    height: 12px;
+}
+
+.sort-wrappper2 {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    height: 12px;
+    padding-right: 32px;
+}
+
+.sort-wrappper3 {
+    display: flex;
+    margin-left: auto;
 }
