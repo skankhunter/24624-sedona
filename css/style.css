@@ -6,7 +6,7 @@ body {
     color: #000000;
     font-family: "PTSans", "Arial", sans-serif;
     text-transform: uppercase;
-
+    background: #f2f2f2;
 }
 
 @font-face {
@@ -25,6 +25,9 @@ a {
     text-decoration: none;
 }
 
+main {
+    background: #fff;
+}
 
 .site-navigation {
     line-height: 26px;
@@ -37,11 +40,12 @@ a {
     color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:hover {
     border-bottom: 3px solid #000000;
+}
+
+.site-navigation a:active {
+    color: #766357;
 }
 
 .welcome-intro {
@@ -53,6 +57,7 @@ a {
 
 .features  {
     list-style: none;
+    background: #fff;
 }
 
 .visually-hidden {
@@ -227,7 +232,7 @@ a {
 }
 
 .appointment {
-    text-align: center;
+    background: #fff;
 }
 
 .appointment b {
@@ -296,6 +301,8 @@ button:active {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .hotel-search:hover {
@@ -344,6 +351,42 @@ button:active {
     height: 38px;
 }
 
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+input[name="max-price"]::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 100;
+}
+
+input[name="min-price"]::-webkit-input-placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 100;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+input:focus::-moz-placeholder {
+    color: transparent
+}
+
+input:focus:-moz-placeholder {
+    color: transparent
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent
+}
+
 .appointment-info input.adult,
 .appointment-info input.kid {
     width: 38px;
@@ -358,33 +401,6 @@ button:active {
 .appointment-info input:focus {
     background-color: #ffffff;
 }
-
-/*input[name="date-in"] {
-    padding-right: 5px;
-}
-
-input[name="date-out"] {
-    padding-right: 5px;
-}
-
-input[type="image"] {
-    left: -10px;
-    position: relative;
-    vertical-align: middle;
-    width: 21px;
-}*/
-
-/*label {
-    font-weight: bold;
-    padding-right: 21px;
-}
-
-input {
-    border: none;
-    outline: none;
-    width: 50px;
-    background-color: transparent;
-}*/
 
 input.date-in,
 input.date-out {
@@ -476,8 +492,12 @@ input[name="adult"]{
     line-height: 26px;
     text-align: center;
     color: #000000;
+    margin-right: 5px;
 }
-/* Тут не получается */
+
+.logo-html {
+    margin-top:  10px;
+}
 
 .logo-html:hover {
     opacity: .5;
@@ -510,33 +530,43 @@ input[name="adult"]{
     list-style: none;
 }
 
+.visually-hidden {
+    visibility: hidden;
+}
 
 .filter-option {
-    font-size: 14px;
-}
-
-label filter-option {
-    width: 23px;
-    height: 23px;
-    display: block;
     position: relative;
-}
-
-input[type="checkbox"] + span {
-    position: absolute;
-    left: 45px;
-    top: 370px;
-    width: 100%;
-    height: 100%;
-    background: url("../img/checkbox-off.svg") no-repeat;
+    padding-left: 45px;
+    font-size: 14px;
     cursor: pointer;
 }
 
-
-input[type="checkbox"]:checked + span   {
-    background: url("../img/checkbox-on.svg") no-repeat;
-    background-position: -1px -2px;
+.filter-option:disabled {
+    color: #6a6a6a;
 }
+
+.filter-option input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background: url("../img/checkbox-on.svg");
+}
+
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background: url("../img/checkbox-off.svg");
+}
+
 
 .filter-range {
     width: 330px;
@@ -575,7 +605,7 @@ input[type="checkbox"]:checked + span   {
 .price-controls label{
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 31px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -793,18 +823,11 @@ input[type="checkbox"]:checked + span   {
 
 .stars-wrapper {
     margin-bottom: 40px;
+    margin-left: auto;
 }
 
 .star {
     fill: #81b3d2;
-}
-
-.star5 {
-    text-shadow: 6px 0  #81b3d2;
-    /*12px 0 0 0 #81b3d2,
-    24px 0 0 0 #81b3d2,
-    28px 0 0 0 #81b3d2,
-    56px 0 0 0 #81b3d2;*/
 }
 
 
@@ -812,6 +835,16 @@ input[type="checkbox"]:checked + span   {
 .container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+}
+
+.container-main {
+    background: #fff;
+}
+
+.main-footer {
+    background: #fff;
 }
 
 .header-navigation {
@@ -933,26 +966,123 @@ input[type="checkbox"]:checked + span   {
     background: #ffffff;
     left: 50%;
     transform: translateX(-50%);
+    padding: 55px;
+    box-sizing: border-box;
 }
 
-.appointment-wrapper6 {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 55px;
-    padding-bottom: 30px;
+
+.appointment-wrapper2 {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 29px;
 }
+
+.appointment-wrapper2 label{
+    margin-right: 19px;
+}
+
+.appointment-wrapper2 input,
+.appointment-wrapper3 input {
+    padding-left: 14px;
+    padding-right: 52px;
+    box-sizing: border-box;
+}
+
 .appointment-wrapper3 {
-    padding-top: 30px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 29px;
 }
+
+.appointment-wrapper3 label {
+    margin-right: 16px;
+}
+
+
+.calendar {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+
+.calendar:hover {
+   fill: #81b3d2;
+}
+
+
 .appointment-wrapper7 {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 30px;
+    justify-content: space-between;
+    margin-bottom: 54px;
 }
+
+.appointment-wrapper4 {
+    position: relative;
+}
+
+.appointment-wrapper4 label {
+    display: block;
+    margin-top: 8px;
+    margin-right: 80px;
+}
+
+.appointment-wrapper4 input {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+.appointment-wrapper4 .minus {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 110px;
+}
+
+.appointment-wrapper4 .plus {
+    position: absolute;
+    font-size: 21px;
+    top: 0;
+    left: 187px;
+}
+
+.appointment-wrapper5 {
+    position: absolute;
+    left: 285px;
+}
+
+.appointment-wrapper5 label {
+    display: block;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.appointment-wrapper5 input {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+.appointment-wrapper5 .minus {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 110px;
+}
+
+.appointment-wrapper5 .plus {
+    position: absolute;
+    font-size: 21px;
+    top: 0;
+    left: 187px;
+}
+
 
 .appointment-wrapper9 {
     position: relative;
+    text-align: center;
 }
+
 
 .map {
     height: 593px;
