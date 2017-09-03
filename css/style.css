@@ -871,9 +871,8 @@ input[name="adult"]{
 
 .site-navigation {
     margin: 0 auto;
-    padding-top: 0;
+    padding: 0;
     padding-bottom: 0;
-    padding-left: 73px;
     width: 1200px;
     min-height: 56px;
     list-style: none;
@@ -888,8 +887,18 @@ input[name="adult"]{
 
 .site-navigation li{
     width: 20%;
+    text-align: center;
 }
 
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+    text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+    text-align: right;
+}
 
 .features-part1 {
     display: flex;
