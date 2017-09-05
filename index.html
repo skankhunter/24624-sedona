@@ -111,7 +111,7 @@
                         и мы покажем вам лучшие предложение гостиниц в Седоне</p>
                 </div>
                 <button type="button" class="hotel-search">Поиск гостиницы в Седоне</button>
-                <div class="appointment-wrapper8 modal-close">
+                <div class="appointment-wrapper8 modal-close modal-error">
 
                         <form action="#" class="appointment-info" method="post">
                             <div class="appointment-wrapper2">
@@ -146,6 +146,7 @@
                         </form>
                 </div>
                     <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11010.55058862281!2d-111.76142673101494!3d34.869887106854634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504638764204" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
             </section>
         </main>
@@ -191,6 +192,7 @@
             evt.preventDefault();
             if (!dateIn.value || !dateOut.value) {
                 evt.preventDefault();
+                popup.classList.toggle("modal-error");
                 console.log("Нужно заполнить все поля");
             }
         })
