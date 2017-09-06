@@ -560,6 +560,18 @@ input[name="adult"]{
     background: url("../img/checkbox-on.svg");
 }
 
+.filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+
+    background: url("../img/checkbox-on.svg");
+    fill: #6a6a6a;
+}
+
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator {
     position: absolute;
     top: 0;
@@ -660,6 +672,9 @@ input[name="adult"]{
 
 .range-toggle:hover {
     background: #669ec0;
+    width: 4px;
+    height: 4px;
+    border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -697,6 +712,8 @@ input[name="adult"]{
     line-height: 26px;
 }
 
+
+
 .sort-types {
     font-size: 12px;
     line-height: 18px;
@@ -720,6 +737,11 @@ input[name="adult"]{
     border: none;
 }
 
+.sort-wrappper2 .active-price {
+    color: #81b3d2;
+    border: none;
+}
+
 .triangle-button {
     display: block;
     width: 10px;
@@ -737,7 +759,7 @@ input[name="adult"]{
 
 .triangle-button:hover,
 .triangle-button:focus {
-    fill: #81b3d2;
+    fill: #000;
 }
 .triangle-button:active {
     fill: #81b3d2;
@@ -745,6 +767,7 @@ input[name="adult"]{
 
 .triangle-button-down {
     margin-left: 12px;
+    fill: #81b3d2;
 }
 
 .catalog h3 {
