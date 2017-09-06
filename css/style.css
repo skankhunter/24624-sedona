@@ -41,11 +41,11 @@ main {
 }
 
 .site-navigation a:hover {
-    border-bottom: 3px solid #000000;
+    color: #5496bd;
 }
 
 .site-navigation a:active {
-    color: #766357;
+    color: #b2b2b2;
 }
 
 .welcome-intro {
@@ -244,7 +244,6 @@ main {
  .appointment p {
      display: block;
      width: 436px;
-     height: 38px;
      line-height: 24px;
      font-size: 14px;
      color: #333333;
@@ -561,7 +560,7 @@ input[name="adult"]{
     background: url("../img/checkbox-on.svg");
 }
 
-.filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator {
     position: absolute;
     top: 0;
     left: 0;
@@ -883,6 +882,12 @@ input[name="adult"]{
     list-style: none;
 }
 
+
+.site-navigation .active {
+    color: #766357;
+}
+
+
 .header-navigation-wrapper .site-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -971,8 +976,11 @@ input[name="adult"]{
     margin-top: 27px;
     width: 33.3%;
 }
+.features-item:nth-child(2) {
+    padding-left: 140px;
+    padding-right: 140px;
 
-
+}
 .appointment-wrapper8 {
     position: absolute;
     display: block;
@@ -1128,6 +1136,7 @@ input[name="adult"]{
 }
 
 .opacity {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: -120px;
 }
@@ -1232,6 +1241,10 @@ fieldset {
     height: 12px;
 }
 
+.sort-wrappper2 a {
+    padding-bottom: 16px;
+}
+
 .sort-wrappper3 {
     display: flex;
     margin-left: auto;
@@ -1302,15 +1315,18 @@ fieldset {
 
 @keyframes strench {
     0% {
-        transform: translateY(-10px);
+        transform: translateY(-40px);
+        left: 395px;
         opacity: 0;
     }
     70% {
         opacity: 0.5;
+        left: 395px;
     }
     100% {
         transform: translateY(0);
         opacity: 1;
+        left: 395px;
     }
 }
 

@@ -111,7 +111,7 @@
                         и мы покажем вам лучшие предложение гостиниц в Седоне</p>
                 </div>
                 <button type="button" class="hotel-search">Поиск гостиницы в Седоне</button>
-                <div class="appointment-wrapper8 modal-close modal-error">
+                <div class="appointment-wrapper8 modal-close">
 
                         <form action="#" class="appointment-info" method="post">
                             <div class="appointment-wrapper2">
@@ -192,7 +192,7 @@
             evt.preventDefault();
             if (!dateIn.value || !dateOut.value) {
                 evt.preventDefault();
-                popup.classList.toggle("modal-error");
+                popup.classList.add("modal-error");
                 console.log("Нужно заполнить все поля");
             }
         })
