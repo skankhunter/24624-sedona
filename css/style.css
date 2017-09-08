@@ -554,7 +554,7 @@ input[name="adult"]{
     top: 0;
     left: 0;
 
-    width: 23px;
+    width: 27px;
     height: 23px;
 
     background: url("../img/checkbox-on.svg");
@@ -1010,10 +1010,7 @@ input[name="adult"]{
     width: 568px;
     height: 395px;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-    margin: 0 auto;
     background: #ffffff;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 55px;
     box-sizing: border-box;
     animation: strench 0.5s;
@@ -1336,21 +1333,21 @@ fieldset {
     margin-left: auto;
 }
 
+.int-map {
+    width: 1200px;
+    height: 593px;
+}
+
+.form-wrapper {
+    width:568px;
+    margin:auto;
+    position: relative;
+
+}
+
 @keyframes strench {
-    0% {
-        transform: translateY(-40px);
-        left: 395px;
-        opacity: 0;
-    }
-    70% {
-        opacity: 0.5;
-        left: 395px;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-        left: 395px;
-    }
+    0% {transform: translateY(-86px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
 }
 
 @keyframes shake {
