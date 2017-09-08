@@ -37,6 +37,22 @@ main {
     background-color: #ffffff;
 }
 
+.site-navigation li:nth-child(1) {
+    padding-left: 20px;
+}
+
+.site-navigation li:nth-child(2) {
+    padding-right: 103px;
+}
+
+.site-navigation li:nth-child(3) {
+    padding-left: 3px;
+}
+
+.site-navigation li:nth-child(4) {
+    padding-right: 25px;
+}
+
 .site-navigation a {
     color: #000000;
 }
@@ -50,10 +66,11 @@ main {
 }
 
 .welcome-intro {
-    height: 630px;
+    height: 670px;
     background-image: url("../img/intro.jpg");
     background-position: 50% center;
     background-repeat: no-repeat;
+
 }
 
 .features  {
@@ -74,10 +91,10 @@ main {
     text-align: center;
     margin: 0 auto;
     color: #000000;
-    margin-top: -75px;
-    -webkit-transform: translateX(2%);
-    -ms-transform: translateX(2%);
-    transform: translateX(2%);
+    margin-top: -100px;
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
 
 }
 
@@ -92,9 +109,9 @@ main {
     margin-left: auto;
     margin-bottom: 36px;
     color: #333333;
-    -webkit-transform: translateX(3%);
-    -ms-transform: translateX(3%);
-    transform: translateX(3%);
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 .features-part1,
@@ -102,6 +119,9 @@ main {
     text-align: center;
 }
 
+.features-part1 {
+    padding-top: 10px;
+}
 
 .features-city-wrapper1 h3 {
     font-size: 21px;
@@ -153,7 +173,7 @@ main {
     line-height: 21px;
     text-align: center;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .gallery-content1 {
@@ -173,6 +193,20 @@ main {
     line-height: 21px;
     padding-top: 60px;
     padding-left: 73px;
+    padding-top: 3px;
+}
+
+.main-features .features-item:nth-child(1) {
+     padding-left: 38px;
+}
+
+.main-features .features-item:nth-child(2) {
+    padding-left: 73px;
+    padding-right: 99px;
+}
+
+.main-features .features-item:nth-child(3) {
+    margin-right: 63px;
 }
 
 .main-features .item-house {
@@ -180,11 +214,11 @@ main {
 }
 
 .main-features .item-eat {
-    background: url("../img/icon-2.svg") no-repeat;
+    background: url("../img/icon-3.svg") no-repeat;
 }
 
 .main-features .item-souvenir {
-    background: url("../img/icon-3.svg") no-repeat;
+    background: url("../img/icon-2.svg") no-repeat;
 }
 
 .item-house,
@@ -199,21 +233,50 @@ main {
     width: 73px;
 }
 
+
+.item-souvenir {
+    margin-left: 102px;
+    margin-top: -3px;
+}
+
 .main-features h3{
     text-align: center;
     line-height: 21px;
     font-weight: bold;
     font-size: 21px;
     color: #000000;
+    margin-top: 26px;
 }
 
-.main-features p{
+.main-features .features-item:nth-child(3) h3{
+    padding-top: 8px;
+}
+
+.main-features p {
     text-align: center;
     line-height: 21px;
     font-size: 14px;
     color: #333333;
 }
 
+
+
+.main-features .features-item:nth-child(1) p{
+    padding: 3px 10px;
+
+}
+.main-features .features-item:nth-child(2) p{
+    padding: 0 20px;
+    padding-top: 3px;
+}
+
+.main-features .features-item:nth-child(3) p{
+    padding: 3px 0;
+}
+
+.features-part2 {
+
+}
 
 .features-part2 h3 {
     text-align: center;
@@ -252,7 +315,6 @@ main {
     line-height: 24px;
     font-size: 14px;
     color: #333333;
-    margin-top: 38px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 52px;
@@ -309,6 +371,7 @@ button:active {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    margin-top: -5px;
 }
 
 .hotel-search:hover {
@@ -329,6 +392,7 @@ button:active {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .button-search:hover,
@@ -555,7 +619,7 @@ input[name="adult"]{
 .filter-option {
     display: block;
     position: relative;
-    padding-left: 45px;
+    padding-left: 42px;
     font-size: 14px;
     cursor: pointer;
 }
@@ -567,7 +631,7 @@ input[name="adult"]{
 .filter-option input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
 
     width: 27px;
     height: 23px;
@@ -578,7 +642,7 @@ input[name="adult"]{
 .filter-option input[type="checkbox"]:disabled + .checkbox-indicator {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
 
     width: 23px;
     height: 23px;
@@ -590,7 +654,7 @@ input[name="adult"]{
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
 
     width: 23px;
     height: 23px;
@@ -603,6 +667,7 @@ input[name="adult"]{
     width: 330px;
     color: #ffffff;
     margin-top: 27px;
+    margin-right: -88px;
 }
 
 .filter-range-title {
@@ -788,6 +853,10 @@ input[name="adult"]{
     fill: #81b3d2;
 }
 
+.catalog {
+    margin-bottom: -10px;
+}
+
 .catalog h3 {
     font-size: 21px;
     font-weight: bold;
@@ -830,7 +899,7 @@ input[name="adult"]{
     text-align: center;
     color: #ffffff;
     background-color: #81b3d2;
-    width: 111px;
+    width: 109px;
     height: 27px;
     margin-right: 6px;
 }
@@ -1037,6 +1106,7 @@ input[name="adult"]{
     align-items: center;
     margin: 0;
     padding: 0;
+    margin-top: -9px;
 }
 
 .features-bridge-wrapper1 {
@@ -1051,23 +1121,60 @@ input[name="adult"]{
 }
 
 .main-features2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0;
     height: 256px;
     margin-top: 0;
     margin-bottom: 57px;
-    padding-left: 69px;
-    padding-right: 69px;
+}
+
+.main-features2 h3 {
+    text-align: center;
+    line-height: 21px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #000000;
+    margin-top: 26px;
+    padding: 0 120px;
+}
+
+.main-features2  .number {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-features2 p {
+    text-align: center;
+    line-height: 21px;
+    font-size: 14px;
+    color: #333333;
+    padding: 10px 62px;
 }
 
 .main-features2 .features-item {
-
-    margin-top: 27px;
+    margin-top: 22px;
     width: 33.3%;
 }
-.features-item:nth-child(2) {
-    padding-left: 140px;
-    padding-right: 140px;
 
+.main-features2 .features-item:nth-child(1) {
+    margin-left: 0px;
 }
+
+.main-features2 .features-item:nth-child(2) {
+    margin-right: -5px;
+}
+
+.main-features2 .features-item:nth-child(3) {
+    margin-right: 4px;
+}
+
 .appointment-wrapper8 {
     position: absolute;
     display: block;
@@ -1102,6 +1209,7 @@ input[name="adult"]{
 
 .appointment-wrapper2 label{
     margin-right: 19px;
+    margin-top: 5px;
 }
 
 .appointment-wrapper2 input,
@@ -1122,6 +1230,7 @@ input[name="adult"]{
 
 .appointment-wrapper3 label {
     margin-right: 16px;
+    margin-top: 5px;
 }
 
 
@@ -1152,8 +1261,9 @@ input[name="adult"]{
 
 .appointment-wrapper4 label {
     display: block;
-    margin-top: 8px;
     margin-right: 80px;
+    margin-top: 7px;
+
 }
 
 .appointment-wrapper4 input {
@@ -1183,7 +1293,7 @@ input[name="adult"]{
 
 .appointment-wrapper5 label {
     display: block;
-    margin-top: 8px;
+    margin-top: 7px;
     margin-left: 50px;
 }
 
@@ -1213,6 +1323,18 @@ input[name="adult"]{
     text-align: center;
 }
 
+.appointment-wrapper9 b {
+    margin-top: -6px;
+    display: block;
+}
+
+.appointment-paragraph1 {
+    margin-top: 23px;
+}
+
+.appointment-paragraph2 {
+    margin-top: -50px;
+}
 
 .map {
     height: 593px;
@@ -1231,8 +1353,8 @@ input[name="adult"]{
 .tag-wrapper {
     margin: 0;
     min-height: 16px;
-    margin-right: 266px;
-    margin-left: 120px;
+    margin-right: 256px;
+    margin-left: 129px;
 }
 
 .footer-social {
@@ -1247,7 +1369,7 @@ input[name="adult"]{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 228px;
+    margin-right: 229px;
 }
 
 .footer-copyright-wrapper {
@@ -1259,7 +1381,7 @@ input[name="adult"]{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 70px;
+    margin-right: 105px;
 }
 
 .container-main {
@@ -1272,7 +1394,7 @@ input[name="adult"]{
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    background: #333333 url("../img/filter_background.jpg") 50% center no-repeat;
+    background: #333333 url("../img/filter_background.jpg") 50% 16% no-repeat;
 }
 
 fieldset {
@@ -1281,23 +1403,43 @@ fieldset {
     display: flex;
 
 }
+.filters1-wrapper2{
+    padding-right: 26px;
+    margin-left: -97px;
+    margin-top: -10px;
+}
+
+.filters1-wrapper2 fieldset {
+    padding: 0;
+    margin-left: 6px;
+    margin-top: 32px;
+}
 
 .filters1-wrapper2 legend {
-    margin-bottom:  30px;
-    padding-top: 27px;
+    margin-bottom:  24px;
+    padding-top: 6px;
+    padding-left: 4px;
 }
 
 .filters1-wrapper2 label {
-    margin-bottom:  30px;
+    margin-bottom:  25px;
+}
+
+.filters1-wrapper3 {
+    margin-left: -245px;
+    margin-top: 28px;
 }
 
 .filters1-wrapper3 legend {
-    margin-bottom:  30px;
-    padding-top: 27px;
+    padding: 0;
+    margin-left: -1px;
+    margin-top: 32px;
+    margin-bottom: 20px;
 }
 
 .filters1-wrapper3 label {
-    margin-bottom:  30px;
+    margin-bottom:  24px;
+    margin-left: -2px;
 }
 
 .filters1-wrapper4 label.price-per-day {
@@ -1318,6 +1460,8 @@ fieldset {
     width: 1200px;
     margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
+    margin-top: -8px;
+    margin-left: -1px;
 }
 
 .sort-wrappper1 b{
@@ -1335,6 +1479,7 @@ fieldset {
     justify-content: space-around;
     width: 355px;
     height: 12px;
+    margin-left: -3px;
 }
 
 .sorting {
@@ -1343,6 +1488,7 @@ fieldset {
     padding: 0;
     font-weight: bold;
     margin-right: 20px;
+    margin-left: 5px;
 }
 
 .sort-wrappper2 {
@@ -1354,6 +1500,7 @@ fieldset {
     justify-content: space-between;
     width: 240px;
     height: 12px;
+    margin-left: 19px;
 }
 
 .sort-wrappper2 a {
@@ -1365,7 +1512,7 @@ fieldset {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
-    margin-right: 73px;
+    margin-right: 75px;
 }
 
 
@@ -1379,7 +1526,7 @@ fieldset {
     -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
-    padding: 32px 73px;
+    padding: 30px 73px;
 }
 
 .hotel-padding {
@@ -1388,6 +1535,20 @@ fieldset {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+}
+
+.hotel:nth-child(1) .hotel-item {
+    margin-top: -20px;
+    margin-left: -2px;
+}
+
+.hotel:nth-child(2) .hotel-item {
+    margin-top: -28px;
+}
+
+.hotel:nth-child(3) .hotel-item {
+    margin-top: -20px;
+    margin-left: -2px;
 }
 
 .hotel-item-image1 {
@@ -1420,14 +1581,35 @@ fieldset {
     flex-wrap: wrap;
     min-height: 91px;
     margin-left: 30px;
+    margin-top: -20px;
 }
 
 .hotel-wrapper1 h3 {
     margin: 0;
 }
 
-.type-and-price {
-    margin-top: 5px;
+.hotel-wrapper1 h3:nth-child(2) {
+    margin-top: -10px;
+}
+
+
+.type-and-price:nth-child(1) {
+    margin-top: -1px;
+    margin-bottom: 3px;
+}
+
+.type-and-price:nth-child(2) {
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.type-and-price:nth-child(3) {
+    margin-top: -1px;
+    margin-bottom: 3px;
+}
+
+.type-and-price .hotel-price {
+    margin-left: 33px;
 }
 
 .hotel-button-wrapper1 {
