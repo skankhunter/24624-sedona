@@ -681,15 +681,12 @@ input[name="adult"]{
 
 .price-controls {
     position: relative;
-
     height: 31px;
     width: 314px;
-    margin-left: 8px;
-    margin-top: 11px;
-    margin-bottom: 21px;
-
+    margin-left: 7px;
+    margin-top: 12px;
+    margin-bottom: 20px;
     font-size: 0;
-
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
@@ -721,6 +718,10 @@ input[name="adult"]{
 .price-controls .max-price {
     width: 90px;
     padding-left: 65px;
+}
+
+.price-controls .max-price {
+    padding-left: 56px;
 }
 
 .price-controls input {
@@ -772,7 +773,7 @@ input[name="adult"]{
 }
 
 .range-toggle-min {
-    left: 0;
+    margin-left: -2px;
 }
 
 .range-toggle-max {
@@ -782,18 +783,16 @@ input[name="adult"]{
 .filter-button{
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
-
+    padding: 6px 33px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
-
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 99px;
+    margin-right: 102px;
 
 }
 
@@ -953,9 +952,15 @@ input[name="adult"]{
 }
 
 .stars-wrapper {
-
-    margin-bottom: 34px;
+    display: flex;
+    margin-bottom: 36px;
     margin-left: auto;
+    margin-top: -1px;
+}
+
+.stars-wrapper li {
+    list-style: none;
+   margin-left: 4px;
 }
 
 .star {
@@ -1707,7 +1712,7 @@ fieldset {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 98px;
+    margin-right: 100px;
 }
 
 @-webkit-keyframes strench {
