@@ -1650,6 +1650,7 @@ fieldset {
 
 .rating {
     margin-top: 3px;
+    margin-left: auto;
 }
 
 .int-map {
