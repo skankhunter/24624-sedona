@@ -231,6 +231,7 @@ main {
     height: 75px;
     margin: auto;
     width: 73px;
+    margin-left: 129px;
 }
 
 
@@ -245,11 +246,12 @@ main {
     font-weight: bold;
     font-size: 21px;
     color: #000000;
-    margin-top: 26px;
+    margin-top: 28px;
 }
 
 .main-features .features-item:nth-child(3) h3{
-    padding-top: 8px;
+    margin-top: 31px;
+    margin-right: 5px;
 }
 
 .main-features p {
@@ -262,16 +264,15 @@ main {
 
 
 .main-features .features-item:nth-child(1) p{
-    padding: 3px 10px;
+    padding: 5px 10px;
 
 }
 .main-features .features-item:nth-child(2) p{
-    padding: 0 20px;
-    padding-top: 3px;
+    padding: 5px 20px;
 }
 
 .main-features .features-item:nth-child(3) p{
-    padding: 3px 0;
+    padding-top: 3px;
 }
 
 .features-part2 {
@@ -339,7 +340,7 @@ button:active {
 .plus {
     color: #a9a9a9;
     width: 40px;
-    height: 40px;
+    height: 37px;
     font: inherit;
     background-color: #f2f2f2;
     border: none;
@@ -460,7 +461,7 @@ input:focus:-ms-input-placeholder {
 .appointment-info input.adult,
 .appointment-info input.kid {
     width: 38px;
-    height: 38px;
+    height: 35px;
 }
 .appointment-info input:hover,
 .appointment-info input:active {
@@ -1201,7 +1202,7 @@ input[name="adult"]{
 
 .appointment-wrapper8 {
     position: absolute;
-    display: block; !important;
+    display: none;
     width: 568px;
     height: 395px;
     -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -1215,7 +1216,7 @@ input[name="adult"]{
 }
 
 .modal-close {
-    display: none;
+    display: block;
 }
 
 
@@ -1261,8 +1262,8 @@ input[name="adult"]{
 
 .calendar {
     position: absolute;
-    top: 9px;
-    right: 8px;
+    top: 6px;
+    right: 11px;
 }
 
 .calendar:hover {
@@ -1301,7 +1302,7 @@ input[name="adult"]{
     position: absolute;
     font-size: 30px;
     top: 0;
-    left: 110px;
+    left: 112px;
 }
 
 .appointment-wrapper4 .plus {
@@ -1332,7 +1333,7 @@ input[name="adult"]{
     position: absolute;
     font-size: 30px;
     top: 0;
-    left: 110px;
+    left: 112px;
 }
 
 .appointment-wrapper5 .plus {
