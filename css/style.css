@@ -682,8 +682,11 @@ input[name="adult"]{
 .price-controls {
     position: relative;
 
-    height: 36px;
-    margin-bottom: 20px;
+    height: 31px;
+    width: 314px;
+    margin-left: 8px;
+    margin-top: 11px;
+    margin-bottom: 21px;
 
     font-size: 0;
 
@@ -708,7 +711,7 @@ input[name="adult"]{
     display: inline-block;
 
     font-size: 14px;
-    line-height: 38px;
+    line-height: 31px;
     vertical-align: top;
 
     cursor: pointer;
@@ -733,13 +736,13 @@ input[name="adult"]{
 
 .range-controls {
     position: relative;
-
+    margin-left: 10px;
     margin-bottom: 32px;
 }
 
 .range-controls .scale {
     height: 2px;
-
+    width: 314px;
     background: rgba(255, 255, 255, 0.3);
 }
 
@@ -773,7 +776,7 @@ input[name="adult"]{
 }
 
 .range-toggle-max {
-    left: 80%;
+    left: 78%;
 }
 
 .filter-button{
@@ -790,8 +793,8 @@ input[name="adult"]{
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 100px;
-    margin-top: -2px;
+    margin-right: 99px;
+
 }
 
 .filter-button:hover {
