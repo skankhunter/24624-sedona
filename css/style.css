@@ -38,7 +38,7 @@ main {
 }
 
 .site-navigation li:nth-child(1) {
-    padding-left: 20px;
+    padding-left: 21px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -50,7 +50,7 @@ main {
 }
 
 .site-navigation li:nth-child(4) {
-    padding-right: 25px;
+    padding-right: 24px;
 }
 
 .site-navigation a {
@@ -91,7 +91,7 @@ main {
     text-align: center;
     margin: 0 auto;
     color: #000000;
-    margin-top: -100px;
+    margin-top: -101px;
     -webkit-transform: translateX(0%);
     -ms-transform: translateX(0%);
     transform: translateX(0%);
@@ -120,7 +120,7 @@ main {
 }
 
 .features-part1 {
-    padding-top: 10px;
+    padding-top: 11px;
 }
 
 .features-city-wrapper1 h3 {
@@ -138,6 +138,7 @@ main {
     line-height: 21px;
     text-align: center;
     color: #ffffff;
+    vertical-align: center;
 }
 
 .number-blue::before {
@@ -156,6 +157,7 @@ main {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    vertical-align: center;
 }
 
 .number::before {
@@ -197,16 +199,18 @@ main {
 }
 
 .main-features .features-item:nth-child(1) {
-     padding-left: 38px;
+
+    width: 33.3%;
 }
 
 .main-features .features-item:nth-child(2) {
-    padding-left: 73px;
-    padding-right: 99px;
+
+    width: 33.3%;
 }
 
 .main-features .features-item:nth-child(3) {
-    margin-right: 63px;
+
+    width: 33.3%;
 }
 
 .main-features .item-house {
@@ -231,12 +235,12 @@ main {
     height: 75px;
     margin: auto;
     width: 73px;
-    margin-left: 129px;
+    margin-left: 159px;
 }
 
 
 .item-souvenir {
-    margin-left: 102px;
+    margin-left: 168px;
     margin-top: -3px;
 }
 
@@ -264,15 +268,15 @@ main {
 
 
 .main-features .features-item:nth-child(1) p{
-    padding: 5px 10px;
+    padding: 5px 46px;
 
 }
 .main-features .features-item:nth-child(2) p{
-    padding: 5px 20px;
+    padding: 5px 49px;
 }
 
 .main-features .features-item:nth-child(3) p{
-    padding-top: 3px;
+    padding: 3px 10px;
 }
 
 .features-part2 {
@@ -393,7 +397,7 @@ button:active {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .button-search:hover,
@@ -919,6 +923,7 @@ input[name="adult"]{
     width: 109px;
     height: 27px;
     margin-right: 6px;
+    vertical-align: center;
 }
 
 .more:hover,
@@ -940,6 +945,7 @@ input[name="adult"]{
     background-color: #766357;
     width: 142px;
     height: 27px;
+    vertical-align: center;
 }
 
 .reserve:hover,
@@ -1086,7 +1092,7 @@ input[name="adult"]{
 }
 
 .features-city-wrapper1 {
-    width: 400px;
+    width: 33.3%;
     min-height: 256px;
     background-color: #81b3d2;
 
@@ -1108,10 +1114,11 @@ input[name="adult"]{
     padding: 0;
     margin-top: 60px;
     margin-bottom: 70px;
+
 }
 
-.main-features .feature-item {
-    width: 400px;
+.feature-item {
+    width: 33.3%;
     min-height: 300px;
 }
 
@@ -1135,7 +1142,7 @@ input[name="adult"]{
 
 .features-bridge-wrapper1 {
     background-color: #81b3d2;
-    width: 400px;
+    width: 33.3%;
     height: 256px;
 }
 
@@ -1153,7 +1160,7 @@ input[name="adult"]{
     margin: 0;
     height: 256px;
     margin-top: 0;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
 }
 
 .main-features2 h3 {
@@ -1180,10 +1187,11 @@ input[name="adult"]{
     font-size: 14px;
     color: #333333;
     padding: 10px 62px;
+    margin-top: 15px;
 }
 
 .main-features2 .features-item {
-    margin-top: 22px;
+    margin-top: 20px;
     width: 33.3%;
 }
 
@@ -1196,7 +1204,7 @@ input[name="adult"]{
 }
 
 .main-features2 .features-item:nth-child(3) {
-    margin-right: 4px;
+
 }
 
 
@@ -1234,7 +1242,7 @@ input[name="adult"]{
 }
 
 .appointment-wrapper2 label{
-    margin-right: 19px;
+    margin-right: 23px;
     margin-top: 5px;
 }
 
@@ -1255,7 +1263,7 @@ input[name="adult"]{
 }
 
 .appointment-wrapper3 label {
-    margin-right: 16px;
+    margin-right: 20px;
     margin-top: 5px;
 }
 
@@ -1350,7 +1358,7 @@ input[name="adult"]{
 }
 
 .appointment-wrapper9 b {
-    margin-top: -6px;
+    margin-top: -5px;
     display: block;
 }
 
@@ -1395,7 +1403,7 @@ input[name="adult"]{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 229px;
+    margin-right: 228px;
 }
 
 .footer-copyright-wrapper {
@@ -1407,7 +1415,7 @@ input[name="adult"]{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 105px;
+    margin-right: 99px;
 }
 
 .container-main {
