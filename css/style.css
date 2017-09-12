@@ -874,7 +874,7 @@ input[name="adult"]{
 }
 
 .catalog {
-    padding: 0 6%;
+
     margin-bottom: -10px;
 }
 
@@ -1028,11 +1028,13 @@ input[name="adult"]{
     width: 100%;
     min-height: 56px;
     background-color: #ffffff;
+    padding: 0 6%;
+    box-sizing: border-box;
 }
 
 .logo {
     position: absolute;
-    margin-left: 50%;
+    margin-left: 44%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1042,10 +1044,10 @@ input[name="adult"]{
 }
 
 .site-navigation {
-    padding: 0 6%;
+    padding: 0;
     padding-top: 15px;
     margin: 0 auto;
-    width: 1200px;
+    width: 100%;
     list-style: none;
     box-sizing: border-box;
 }
@@ -1570,6 +1572,7 @@ fieldset {
     align-items: flex-start;
     margin: 0 auto;
     padding: 30px 6%;
+    box-sizing: border-box;
 
 }
 
